@@ -20,11 +20,26 @@
 ```
 job-applicant-system/
 ├── src/
-│   ├── App.jsx        # Main component (CRUD, Search, Filter, Pagination)
-│   └── main.jsx       # Entry point
+│   ├── components/
+│   │   ├── ApplicantForm.jsx
+│   │   ├── ConfirmDialog.jsx
+│   │   ├── Pagination.jsx
+│   │   ├── SearchFilterBar.jsx
+│   │   └── StatusBadge.jsx
+│   ├── hooks/
+│   │   └── useApplicants.js
+│   ├── services/
+│   │   └── api.js
+│   ├── utils/
+│   │   ├── validation.js
+│   │   └── statusFlow.js
+│   ├── pages/
+│   │   └── ApplicantsPage.jsx
+│   ├── App.jsx
+│   └── main.jsx
 ├── gas_backend/
-│   └── Code.gs        # Google Apps Script backend
-├── index.html
+│   └── Code.gs
+├── .env.example
 ├── package.json
 ├── vite.config.js
 └── README.md
