@@ -20,28 +20,13 @@
 ```
 job-applicant-system/
 ├── src/
-│   ├── components/
-│   │   ├── ApplicantTable.jsx      # ตาราง list ผู้สมัคร
-│   │   ├── ApplicantForm.jsx       # form เพิ่ม/แก้ไข
-│   │   ├── ConfirmDialog.jsx       # dialog ยืนยันลบ
-│   │   ├── SearchFilterBar.jsx     # search / filter / sort
-│   │   ├── StatusBadge.jsx         # badge แสดงสถานะ
-│   │   └── Pagination.jsx          # pagination
-│   ├── services/
-│   │   └── api.js                  # fetch wrapper สำหรับ GAS API
-│   ├── utils/
-│   │   ├── validation.js           # client-side validation
-│   │   └── statusFlow.js           # status transition logic
-│   ├── hooks/
-│   │   └── useApplicants.js        # custom hook จัดการ state
-│   ├── pages/
-│   │   └── ApplicantsPage.jsx      # main page
-│   ├── App.jsx
-│   └── main.jsx
+│   ├── App.jsx        # Main component (CRUD, Search, Filter, Pagination)
+│   └── main.jsx       # Entry point
 ├── gas_backend/
-│   └── Code.gs                     # Google Apps Script backend
-├── .env.example
+│   └── Code.gs        # Google Apps Script backend
+├── index.html
 ├── package.json
+├── vite.config.js
 └── README.md
 ```
 
